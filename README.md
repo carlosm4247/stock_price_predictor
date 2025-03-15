@@ -1,4 +1,4 @@
-# stock_price_predictor
+# Stock Price Predictor
 
 This project uses three AI Models to predict stock prices in the market! Key concepts included are:
 
