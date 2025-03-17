@@ -70,7 +70,7 @@ for stock in stocks: #Iterating over each stock to be predicted by each model
     plt.legend()
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
     plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-    plt.savefig(os.path.join('Workshop 4/result/lstm_plots', f'{stock}_lstm.png'))
+    plt.savefig(os.path.join('/Users/carlosmoreno/stock_price_predictor/result/lstm_plots', f'{stock}_lstm.png'))
     plt.close()
 
     # Random Forest Model
@@ -90,7 +90,7 @@ for stock in stocks: #Iterating over each stock to be predicted by each model
     plt.legend()
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
     plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-    plt.savefig(os.path.join('Workshop 4/result/randomForest_plots', f'{stock}_randomForest.png'))
+    plt.savefig(os.path.join('/Users/carlosmoreno/stock_price_predictor/result/randomForest_plots', f'{stock}_randomForest.png'))
     plt.close()
 
     # SVR (Support Vector Regressor) Model
@@ -110,7 +110,7 @@ for stock in stocks: #Iterating over each stock to be predicted by each model
     plt.legend()
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
     plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-    plt.savefig(os.path.join('Workshop 4/result/svr_plots', f'{stock}_svr.png'))
+    plt.savefig(os.path.join('/Users/carlosmoreno/stock_price_predictor/result/svr_plots', f'{stock}_svr.png'))
     plt.close()
 
 print("Results:")
