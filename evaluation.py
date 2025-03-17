@@ -12,3 +12,7 @@ from lstm import lstm_train_predict
 from randomForest import randomForest_train_predict
 from svr import svr_train_predict
 
+#Importing Data
+data = pd.read_csv('/Users/carlosmoreno/stock_price_predictor/data/stocks_data.csv')
+
+df = pd.DataFrame(data)
