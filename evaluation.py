@@ -1,4 +1,4 @@
-#Importing Libraries
+# Importing Libraries
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -7,12 +7,12 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import os 
 
-#Importing the Trained Models for Predictions 
+# Importing the Trained Models for Predictions 
 from lstm import lstm_train_predict
 from randomForest import randomForest_train_predict
 from svr import svr_train_predict
 
-#Importing Data
+# Importing Data
 data = pd.read_csv('/Users/carlosmoreno/stock_price_predictor/data/stocks_data.csv')
 
 df = pd.DataFrame(data)
