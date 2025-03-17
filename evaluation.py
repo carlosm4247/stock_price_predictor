@@ -16,3 +16,15 @@ from svr import svr_train_predict
 data = pd.read_csv('/Users/carlosmoreno/stock_price_predictor/data/stocks_data.csv')
 
 df = pd.DataFrame(data)
+
+# Evaluation Function
+def evaluate_model(model, stock, Y_test, Y_predictions):
+    print(f"{model} evaluation for {stock}:")
+
+    mse = mean_squared_error(Y_test, Y_predictions)
+    r2 = r2_score(Y_test, Y_predictions)
+
+    print(f"Mean Squared Error: {mse:.4f}")
+    print(f"R2 Score: {r2:.4f}")
+
+    return r2, mse
